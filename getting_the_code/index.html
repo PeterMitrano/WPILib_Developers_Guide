@@ -1,16 +1,17 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>A Brand New nanoc Site - </title>
-    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="../stylesheet.css">
 
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="nanoc 3.8.0">
   </head>
   <body>
     <div id="main">
-      Getting & Using the Code
+      Getting &amp; Using the Code
 =================
 
 ##Downloading the source 
@@ -34,12 +35,12 @@ Of course, when I say "all the things", I mearly mean a small subset of the thin
 
 	# This builds everything except WPILibC++Sim and frc_gazebo_plugins
 	# I will be fixing those two shortly.
-	$> ./gradlew build eclipsePlugins
+	$&gt; ./gradlew build eclipsePlugins
 
 Side note. I want to explain what I'm telling you to do, so if I ever fail to do that and you're curious, email me and I'll elaborate. The special grey blocks are extra info. If you're in a hurry you can skip them, but i **HIGHLY** recommend you don't.
 
 
->
+&gt;
 WPILibC++Sim and frc_gazebo_plugins are the two main projects associated with FRCSim. I am currently the main developer of that project along with [Logan Tutt](github.com/logantutt), who did the solidworks stuff.
 That command does a few things. First, it runs the graldew script, which setups up gradle if you don't have it already. Second, it builds the code. The two things after gradlew are the targets you want it to build. If you just type graldew not much will happen (except for the first time, where it will install gralde). build tells it to do compile all the C++ code into libaries (.so files) and the Java code into jars (.jar files). The target eclipsePlugins builds and packages the eclipse plugins. More details on these later. Feel free to read the gradlew script to see how it works
 
