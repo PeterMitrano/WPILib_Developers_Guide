@@ -15,12 +15,17 @@
 
 compile '*' do
   if item[:extension] == 'css'
-    # don’t filter stylesheets
+    # don’t filter stylesheet
+  elsif item[:extension] == 'md'
+    filter :kramdown
+    layout 'default'
   elsif item.binary?
     # don’t filter binary items
   else
     filter :erb
     layout 'default'
+    filter :relativize_paths, :type => :html
+    filter :relativize_paths, :type => :css
   end
 end
 

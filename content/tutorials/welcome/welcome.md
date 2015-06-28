@@ -1,3 +1,6 @@
+---
+Title: Welcome
+---
 #Welcome!
 
 ### Being a WPILib developer is awesome, and its people like you who make WPILib and even FIRST possible!

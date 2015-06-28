@@ -1,3 +1,7 @@
+---
+title: Getting & Using the Code
+---
+
 Getting & Using the Code
 =================
 

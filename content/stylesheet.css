@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
   font-family: Georgia, Palatino, serif;
 }
 
@@ -22,6 +21,13 @@ a:hover {
   color: #f90;
 }
 
+code {
+  font-family: courier;
+  background-color: #fff0f0;
+  padding: 2px;
+}
+
+
 #main {
   position: absolute;
 
@@ -38,6 +44,10 @@ a:hover {
   line-height: 40px;
 
   letter-spacing: -1px;
+}
+
+#main h2 {
+  font-weight: normal;
 }
 
 #main p {
@@ -60,6 +70,12 @@ a:hover {
 
 #main ul li {
   list-style-type: square;
+}
+
+#code_block {
+  border:solid gray;
+  border-width:.1em .1em .1em .8em;
+  padding:.2em .6em;
 }
 
 #sidebar {
