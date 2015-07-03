@@ -28,7 +28,6 @@ code {
   padding: 2px;
 }
 
-
 #main {
   position: absolute;
 
@@ -115,4 +114,21 @@ code {
   font-size: 14px;
 
   line-height: 20px;
+}
+
+/* non bulleted categories in tutorial list*/
+.tutorial.category {
+  background-color: #5f5f5f;
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+.tutorial.category a{
+  color: #ffffff
+}
+
+/* bullet items in tutorial list*/
+.tutorial.item a{
+
 }
