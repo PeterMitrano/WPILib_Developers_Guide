@@ -1,8 +1,5 @@
 #!/usr/bin/env ruby
 
-compile '/**/*.html' do
-  layout '/default.*'
-end
 
 # This is an example rule that matches Markdown (.md) files, and filters them
 # using the :kramdown filter. It is commented out by default, because kramdown
@@ -13,6 +10,12 @@ compile '/**/*.md' do
   layout '/default.*'
 end
 
+compile '/**/*.html' do
+  layout '/default.*'
+  filter :erb
+  filter :relativize_paths, type: :html
+end
+
 compile '/**/*' do
 end
 
@@ -20,12 +23,13 @@ route '/**/*.{html,md}' do
   if item.identifier =~ '/index.*'
     '/index.html'
   else
-    item.identifier.without_ext + '/index.html'
+    item.identifier.without_ext + '.html'
   end
 end
 
 route '/**/*' do
   item.identifier.to_s
 end
+
 
 layout '/**/*', :erb

@@ -1,9 +1,8 @@
 ---
 title: An Introduciton to FRCsim
 ---
+#An Introduction to FRCSim
 
-An Introduction to FRCSim
-=========================
 
 ## What is it?
 
