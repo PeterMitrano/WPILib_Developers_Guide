@@ -1,3 +1,58 @@
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #c0392b;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 12pt;
+		font-weight: 300;
+		color: #444444;
+	}
+	
+	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+		font-weight: 600;
+		color: #333333;
+	}
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	strong
+	{
+	}
+	
+	a
+	{
+		color: #2980b9;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
 code {
   font-family: courier;
   padding: 2px;
@@ -9,6 +64,23 @@ code {
   height: 100%;
   margin: 0 auto -4em;
 }
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		overflow: hidden;
+		width: 60%;
+		min-height: 800px;
+		background: #fafafa;
+		text-align: center;
+		padding-left: 7.5%;
+		padding-right: 7.5%;
+		padding-top: 3em;
+	}
+
 
 /* non bulleted categories in tutorial list*/
 #main .tutorial.category {
@@ -23,10 +95,59 @@ code {
 #main .tutorial.item {
 }
 
-#code_block {
-  border:solid gray;
-  border-width:.1em .1em .1em .8em;
-  padding:.2em .6em;
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+#banner	.image-full
+	{
+		width: 150%;
+		margin-right: -15%;
+		float: right;
+	}
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+		margin-bottom: 3em;
+	}
+	
+	.title h2
+	{
+		font-size: 2.8em;
+	}
+		
+
+	.title h3 {
+		margin-top: 10px;
+		font-weight: 300;
+		font-size: 1.4em;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		text-align: center;
+		margin-bottom: 4em;
+	}
+	
+	#logo h1
+	{
+		color: #FFF;
+	}
+	
+/*********************************************************************************/
+/* Sidebar                                                                        */
+/*********************************************************************************/
+
+#sidebar {
+  float: left;
+  width: 25%;
 }
 
 #sidebar .tutorial.category {
@@ -60,12 +181,97 @@ code {
 #sidebar #search-button {
   border: none;
   background-color: transparent;
+  float: right;
+  margin: 3px;
 }
 
 #sidebar #search-button i{
   background-color: transparent;
 }
 
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+	{
+	}
+	
+	#menu ul
+	{
+	}
+	
+	#menu li
+	{
+		border-top: 1px solid rgba(255,255,255,0.08);
+	}
+	
+	#menu li a, #menu li span
+	{
+		display: block;
+		padding: 2em 1.5em;
+		text-align: center;
+		text-decoration:  none;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: rgba(255,255,255,0.5);
+	}
+	
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+	}
+	
+	#menu .current_page_item a
+	{
+		background: #b72c1c;
+		color: rgba(255,255,255,1);
+	}
+	
+	#menu .icon
+	{
+	}
+	
+/***********************************************************************/
+/* Code                                                                */
+/***********************************************************************/
+#code_block {
+  border:solid gray;
+  border-width:.1em .1em .1em .8em;
+  padding:.2em .6em;
+}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		border-top: 1px solid rgba(0,0,0,0.08);
+	}
+	
+	#copyright span
+	{
+		display: block;
+		letter-spacing: 0.20em;
+		line-height: 2.5em;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 0.80em;
+		color: rgba(10,10,10,0.7);
+	}
+	
+	#copyright a
+	{
+		color: rgba(0,0,0,0.9);
+		text-decoration: none;
+		font-weight: 300;
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
 #footer, #push {
   height: 4em;
 }
