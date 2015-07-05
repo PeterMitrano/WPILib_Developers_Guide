@@ -45,7 +45,7 @@
 	
 	a
 	{
-		color: #2980b9;
+		color: #c0392b;
 	}
 	
 	a:hover
@@ -69,30 +69,42 @@ code {
 /* Main                                                                          */
 /*********************************************************************************/
 
-	#main
-	{
-		overflow: hidden;
-		width: 60%;
-		min-height: 800px;
-		background: #fafafa;
-		text-align: center;
-		padding-left: 7.5%;
-		padding-right: 7.5%;
-		padding-top: 3em;
-	}
-
-
-/* non bulleted categories in tutorial list*/
-#main .tutorial.category {
+#main
+{
+	overflow: hidden;
+	width: 60%;
+	min-height: 800px;
+	background: #fafafa;
+	text-align: center;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+	padding-top: 3em;
 }
 
-#main .tutorial.category li{
+#main a {
+	text-decoration: none;
+	font-weight: 400;
+}
+
+#main .tutorial {
+	text-align: left;
+}
+
+/* non bulleted categories in tutorial list*/
+#main .tutorial.category{
+	margin-top:25px;
+	margin-bottom:5px;
+
 }
 
 #main .tutorial.category a{
+	color: black;
+	font-weight: 700;
 }
 
 #main .tutorial.item {
+	list-style-type: square;
+	margin-left: 30px;
 }
 
 /*********************************************************************************/

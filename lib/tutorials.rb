@@ -1,19 +1,27 @@
 def tutorials(items)
-  tutorials=""
-  begun_categories = false
+  #sort item alphabetically first
+  list = []
   items.each do |item|
+    list << item
+  end
+  list.sort_by!{ |item| item.path.downcase}
+  #generate the html
+  tutorials="<ul>"
+  begun_categories = false
+  list.each do |item|
     if (item.path.include?("tutorials/"))
       if (item[:category] != nil)
         if (begun_categories)
-          tutorials += "</ul>"
+          tutorials += "</ul></il>"
         end
+        tutorials += "<li><div class='tutorial category'><a href='#{item.path}'>#{item[:category]}</a></div>"
         tutorials += "<ul>"
-        tutorials += "<div class='tutorial category'><li><a href='#{item.path}'>#{item[:category]}</a></li></div>"
         begun_categories = true
       else
         tutorials += "<li class='tutorial item'><a href='#{item.path}'>#{item[:title]}</a></li>"
       end
     end
   end
+  tutorials += "</ul>"
   return tutorials
 end
