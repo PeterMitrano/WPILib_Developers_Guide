@@ -12,7 +12,7 @@
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-<title>WPILib Developers Guide - An Introduciton to FRCsim</title>
+<title>WPILib Developers Guide - Structure of WPILibJ</title>
 </head>
 <body>
 <div id="wrapper">
@@ -37,25 +37,17 @@
     </div>
   </div>
   <div id="main">
-    <h1 id="an-introduction-to-frcsim">An Introduction to FRCSim</h1>
+    <h1 id="structure-of-wpilibj">Structure of WPILibJ</h1>
 
-<h2 id="what-is-it">What is it?</h2>
+<p>WPILibJ is the java WPI Library for FRC. It is located within the allwpilib project at <code>allwpilib\wpilibj</code>. Like most other things in allwpilib, it is built using gradle. In this case, the result of this is a JAR file, called <code>wpilibj.jar</code>. There is also a Simulation version of wpilibj, which creates <code>wpilibjSimulation.jar</code>. Within the wpilibj folder, you’ll find (amoung other things) the following:</p>
 
-<p>FRCSim is a subproject of wpilib that allows you to run wpilib code in the Gazebo robot simulator. It’s comprised of an Eclipse plugin (temporary), a set of gazebo plugins, a set of gazebo models, and a java and a c++ clones of wpilib.</p>
-
-<p><strong>Eclipse Plugins</strong></p>
-
-<p>The eclipse plugins is used to deliver all of these to students.
-&gt;
-The way eclipse plugins are used to deliver stuff is kinda dumb. I don’t know of any w:way to have your code run “on install”, so what we do is we check if the user hasn’t already gotten it, and if they haven’t we unzip or download whatever is needed. Because this is done based on plugin version number, when you’re working on wpilib and installing locally (we’ll get there) they do their thing every single time you make changes and re-load the plugins. It’s not a long process, but one you should be aware of since it can happen without you noticing.</p>
-
-<p><strong>Gazebo Plugins and Models</strong></p>
-
-<p>The eclips simulation plugin, which lives in ‘allwpilib/eclipse-plugins/edu.wpi.first.wpilib.plugins.simulation’, is used to deliver the models and gazebo plugins. The plugins connect wpilib to gazebo. The models are just for you to play around with if you don’t have your own.</p>
-
-<p><strong>Simulation WPILib clones</strong></p>
-
-<p>The simulation clones of wpilib live right next to normal wpilib. The C++ simulation wpilib is at ‘allwpilib/wpilibc/wpilibC++Sim’ and the java one at ‘allwpilib/wpilibj/wpilib/wpilibJavaSim’. They are used instead of the normal wpilib when you run code in simulation. More detail on this later.</p>
+<pre><code>wpilibJava
+wpilibJavaDevices
+wpilibJavaSim
+wpilibJavaFinal
+wpilibJavaJNI
+wpilibJavaIntegrationTests
+</code></pre>
 
 
   </div>
