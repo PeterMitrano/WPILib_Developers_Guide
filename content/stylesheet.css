@@ -1,99 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-
-  font-family: Georgia, Palatino, serif;
-}
-
-body {
-  background: #95a5a6;
-  height: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: #c0392b;
-}
-
-a:hover {
-  color: #f90;
-}
-
 code {
   font-family: courier;
-  background-color: #fff0f0;
-  font-size: small;
   padding: 2px;
 }
 
 #wrapper{
   min-height:100%;
-  position:relative;
-}
-#main {
-  position: absolute;
-
-  top: 40px;
-  left: 20%;
-
-  width: 75%;
-
-  padding-bottom:100px; /*height of footer*/
-}
-
-#main h1 {  
-  font-size: 40px;
-  font-weight: normal;
-
-  line-height: 40px;
-}
-
-#main h2 {
-  font-weight: normal;
-}
-
-#main p {
-  margin: 20px 0;
-
-  font-size: 15px;
-
-  line-height: 20px;
-}
-
-#main ul, #main ol {
-  margin: 20px;
-}
-
-#main li {
-  font-size: 15px;
-
-  line-height: 20px;
-}
-
-#main ul li {
-  list-style-type: square;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
 }
 
 /* non bulleted categories in tutorial list*/
 #main .tutorial.category {
-  background-color: #c0392b;
-  padding: 10px;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  border-radius: 0px 25px 25px 0px;
 }
 
 #main .tutorial.category li{
-  list-style-type: none;
-
 }
 
 #main .tutorial.category a{
-  color: #ffffff
 }
 
 #main .tutorial.item {
-  margin-left: 50px;
 }
 
 #code_block {
@@ -102,64 +29,43 @@ code {
   padding:.2em .6em;
 }
 
-#sidebar {
-  position: absolute;
-
-  top: 100px;
-  width: 16%;
-
-  padding-left: 25px;
-
-  border-right: 1px solid #ccc;
-
-  text-align: left;
-}
-
-#sidebar h2 {
-  text-transform: uppercase;
-
-  font-size: 18px;
-
-  color: #333;
-
-  letter-spacing: 1px;
-
-  margin-top: 32px;
-  margin-bottom: 7px;
-}
-
 #sidebar .tutorial.category {
-  margin-top: 10px;
-  margin-bottom: 4px;
 }
 
 #sidebar .tutorial.category a{
-  color: #000;
 }
 
 #sidebar li {
-  list-style-type: none;
-  font-size: 14px;
 }
 
-#footer {
-  background-color: #fff;
-  width:100%;
-  height:100px;
-  position:absolute;
-  bottom: 100px;
-  left:0;
+#sidebar #searchbox{
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d2d2d2;
+  background-color: #d2d2d2;
+  margin: 40px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 20px;
 }
 
-#footer_wpi_logo {
-  float: left;
-  margin: 10px;
+#sidebar #search{
+  border: none;
+  background-color: #d2d2d2;
+  padding: 6px;
+
 }
 
-#nanoc_tag {
-  font-size: 12px;
-  color: #ddd;
-  float: right;
-  margin: 10px;
+#sidebar #search-button {
+  border: none;
+  background-color: transparent;
 }
 
+#sidebar #search-button i{
+  background-color: transparent;
+}
+
+#footer, #push {
+  height: 4em;
+}
