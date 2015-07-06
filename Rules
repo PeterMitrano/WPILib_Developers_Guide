@@ -6,8 +6,16 @@
 # is not bundled with nanoc or Ruby.
 #
 compile '/**/*.md' do
+  filter :erb
   filter :kramdown
   layout '/default.*'
+  filter :erb
+  filter :relativize_paths, type: :html
+end
+
+compile '/js/custom.js' do
+  filter :erb
+  filter :relativize_paths, type: :html
 end
 
 compile '/**/*.html' do

@@ -43,3 +43,10 @@ def mangle_href(href)
   end
   return "/" + href + ".html"
 end
+
+def include_search_box(current_path)
+  search_box = "<div id='searchbox'>\n<form action='/search.html'>\n<input type='text' id='search_input' placeholder='EX: FRCSim'>\n<i class='fa fa-search'></i>\n</form>\n</div>"
+  unless (current_path.include?("search"))
+      return search_box
+  end
+end

@@ -1,4 +1,4 @@
-#Contributing
+# <i class="fa fa-github"></i> Contributing
 
 If you see something not covered and think you can help fill the gap, fork the repository and make a pull request.
 

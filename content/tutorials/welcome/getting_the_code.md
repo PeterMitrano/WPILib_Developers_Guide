@@ -12,11 +12,9 @@ WPILib code is stored on our CollabNet account. In order to access the source co
  1. An account. Make one if you don't have one already
  2. Access to the repository. Go down to Brad's office (in Atwater Kent, behind the undergrad RBE Lab) or email him. Do'nt email me, I can't do that.
  3. Once you have access, you'll need to add your SSH keys. There's an awesome [Github Tutorial](https://www.github.com/generating-ssh-keys) on generating SSH keys. Go there, then go the your collabnet account and add them 
- 4. got to the wpilib project, then hit 'Source'. On the right of the page there should be a line of code like 'git checkout aturing@collabnet.com/wpilib/31415926'. Copy that into your shell and it will checkout (like downloading, but for git) the code
+ 4. got to the wpilib project, then hit `Source`. On the right of the page there should be a line of code like `git checkout aturing@collabnet.com/wpilib/31415926`. Copy that into your shell and it will checkout (like downloading, but for git) the code
 
 Note: if you don't know git, you will soon. We're getting there in a sec.
-
-<strong>PICTURES</strong>
 
 
 ##Working with the source
@@ -24,9 +22,11 @@ Note: if you don't know git, you will soon. We're getting there in a sec.
 Ok, so now you have the code. Great. What do you do with it? Well you probably want to try building the code, so let's go over how to do this, and all the things that could go wrong.
 Of course, when I say "all the things", I mearly mean a small subset of the things that could go wrong. I've never had a problem, but I do not deny their existance.
 
-	# This builds everything except WPILibC++Sim and frc_gazebo_plugins
-	# I will be fixing those two shortly.
-	$> ./gradlew build eclipsePlugins
+<pre class="prettyprint lang-bash">
+ # This builds everything except WPILibC++Sim and frc_gazebo_plugins
+ # I will be fixing those two shortly.
+ $> ./gradlew build eclipsePlugins
+</pre>
 
 Side note. I want to explain what I'm telling you to do, so if I ever fail to do that and you're curious, email me and I'll elaborate. The special grey blocks are extra info. If you're in a hurry you can skip them, but i **HIGHLY** recommend you don't.
 

@@ -20,7 +20,7 @@ The eclips simulation plugin, which lives in 'allwpilib/eclipse-plugins/edu.wpi.
 
 **Simulation WPILib clones**
 
-The simulation clones of wpilib live right next to normal wpilib. The C++ simulation wpilib is at 'allwpilib/wpilibc/wpilibC++Sim' and the java one at 'allwpilib/wpilibj/wpilib/wpilibJavaSim'. They are used instead of the normal wpilib when you run code in simulation. More detail on this later.
+The simulation clones of wpilib live right next to normal wpilib. The C++ simulation wpilib is at `allwpilib/wpilibc/wpilibC++Sim` and the java one at `allwpilib/wpilibj/wpilib/wpilibJavaSim`. They are used instead of the normal wpilib when you run code in simulation. More detail on this later.
 
 
 
