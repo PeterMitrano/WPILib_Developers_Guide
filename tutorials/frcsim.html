@@ -2,22 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../stylesheet.css">
 <!-- you don't need to keep this, but it's cool for stats! -->
 <meta name="generator" content="nanoc 4.0.0b4">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all">
-<script src="js/custom.js"></script>
+<link rel="stylesheet" href="../stylesheet.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<!-- <script src="/js/custom.js"></script> -->
+
 <title>WPILib Developers Guide - </title>
 </head>
 <body>
 <div id="wrapper">
   <div id="sidebar">
     <div id="logo">
-      <img src="images/wpi_logo_black.png" width="175px" alt="">
+      <img src="../images/wpi_logo_black.png" width="175px" alt="">
       <h1>WPILib Developers Guide</h1>
     </div>
     <div id="menu">
@@ -27,37 +30,41 @@
 <li class=""><a href="../contributing.html">Contributing</a></li>
 <li class=""><a href="../bugs.html">Bugs</a></li>
         <li>
-        <form id="searchbox" action="">
-          <input id="search" type="text" placeholder="EX: FRCSim">
-          <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
-        </form>  
+        <div id="searchbox">
+<form action="/search.html">
+<input type="text" name="q" id="tipue_search_input" placeholder="EX: FRCSim" autocomplete="off" required>
+</form>
+</div>
         </li>
       </ul>
     </div>
   </div>
   <div id="main">
-    <h2>Category: FRCSim</h2>
-<br>
-<br>
+    <h2 id="category-frcsim">Category: FRCSim</h2>
 <ul>
 <li>
 <div class="tutorial category"><a href="frcsim.html">FRCSim</a></div>
-<ul><li class="tutorial item"><a href="frcsim/intro_to_frcsim.html">An Introduciton to FRCsim</a></li></ul>
+<ul>
+<li class="tutorial tut"><a href="frcsim/intro_to_frcsim.html">An Introduciton to FRCsim</a></li>
+</ul>
 </li>
 <li>
 <div class="tutorial category"><a href="welcome.html">Welcome</a></div>
 <ul>
-<li class="tutorial item"><a href="welcome/getting_the_code.html">Getting &amp; Using the Code</a></li>
-<li class="tutorial item"><a href="welcome/welcome.html">Welcome</a></li>
+<li class="tutorial tut"><a href="welcome/getting_the_code.html">Getting &amp; Using the Code</a></li>
+<li class="tutorial tut"><a href="welcome/welcome.html">Welcome</a></li>
 </ul>
 </li>
 <li>
 <div class="tutorial category"><a href="wpilibj.html">WPILibJ</a></div>
-<ul><li class="tutorial item"><a href="wpilibj/structure.html">Structure of WPILibJ</a></li></ul>
-
-  </li>
+<ul>
+<li class="tutorial tut"><a href="wpilibj/structure.html">Structure of WPILibJ</a></li>
 </ul>
-</div>
+</li>
+</ul>
+
+
+  </div>
   <div id="push"></div>
 </div>
 <div id="footer">
