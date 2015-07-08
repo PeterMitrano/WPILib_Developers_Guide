@@ -228,6 +228,7 @@
 #sidebar #search_button {
 	background-color: transparent;
 	border: none;
+	float: right;
 }
 
 /*********************************************************************************/
