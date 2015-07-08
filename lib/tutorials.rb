@@ -13,8 +13,12 @@ def insert_tutorial(tree, item, path)
   end
 
   key = path.first
-  val = path.first.split('.').first #strip file extension
-  tree.add Tree::TreeNode.new(key,val)
+  if (path.first == path.last)
+    text = item[:title]
+  else
+    text = path.first
+  end
+  tree.add Tree::TreeNode.new(key,{path: item[:path], text: text})
  
   if (path.length() > 1)
     tree = tree[key]
@@ -36,17 +40,18 @@ def tutorials(items)
   tree.print_tree
 
   #generate the html
-  return "<ul>#{generate_html(tree)}</ul>"
+  return "<div id='tutorials'><ul>#{generate_html(tree)}</ul></div>"
 end
 
-def generate_html(tree)
+def generate_html(tree, level = 0)
   html = ""
   tree.children.each do |node|
     if (node.is_leaf?)
-      html += "<li><div class='tutorial tut'><a href='#{node.name}'>#{node.content}</a></div></li>"
+      html += "<li><div class='tutorial tut'><a href='#{node.content[:path]}'>#{node.content[:text]}</a></div></li>"
     else
-      children = generate_html(node)
-      html +="<li><div class='tutorial category'><a href='#{node.name}'>#{node.content}</a></div><ul>#{children}</ul></li>"
+      children = generate_html(node, level + 1)
+      alpha = (level + 65).chr
+      html +="<li><div class='tutorial category #{alpha}'>#{node.content[:text]}</div><ul>#{children}</ul></li>"
     end
   end
   return html
