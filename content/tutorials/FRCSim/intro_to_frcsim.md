@@ -1,5 +1,5 @@
 ---
-title: An Introduciton to FRCsim
+title: An Introduction to FRCsim
 ---
 #An Introduction to FRCSim
 

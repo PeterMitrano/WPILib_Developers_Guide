@@ -1,6 +1,7 @@
 ---
-Gazebo Integration
+title: Gazebo Integration
 ---
+# Gazebo Integration
 
 As I may have explain earlier, FRCSim is simply a combination of Gazebo Plugins, a WPILib clone, and some custom messages. That is true, but it's a little bit simplistic. In the following tutorials, I will go in depth into the role Gazebo plays in FRCSim.
 
