@@ -1,9 +1,6 @@
+include Nanoc::Helpers::LinkTo
+
 # generate html menu for default layout
-# should look like this in the end  
-#  <li class="current_page_item"><a href="/" accesskey="1" title="">Homepage</a></li>
-#  <li><a href="/tutorials.html" accesskey="1" title="">Tutorials</a></li>
-#  <li><a href="/contributing.html" accesskey="2" title="">Contributing</a></li>
-#  <li><a href="/bugs.html" accesskey="3" title="">Bugs</a></li>
 def generate_menu(current_path)
   items = [
     {
@@ -31,7 +28,9 @@ def generate_menu(current_path)
     if (current_path == href)
       classname = "current_page_item"
     end
-    html += "<li class='#{classname}'><a href='#{href}'>#{item[:title]}</a></li>"
+    link_path = relative_path_to(href)
+    link = link_to(item[:title],link_path)
+    html += "<li class='#{classname}'>#{link}</li>"
   end
 
   return html
@@ -45,7 +44,14 @@ def mangle_href(href)
 end
 
 def include_search_box(current_path)
-  search_box = "<div id='searchbox'>\n<form action='/search.html'>\n<input type='text' id='search_input' placeholder='EX: FRCSim'>\n<i class='fa fa-search'></i>\n</form>\n</div>"
+  search = relative_path_to("/search.html")
+  puts search
+  search_box = "<div id='searchbox'>"
+  search_box += "<form action='#{search}'>"
+  search_box += "<input type='text' id='search_input' placeholder='EX: FRCSim'>"
+  search_box += "<button id='search_button' > <i class='fa fa-search'></i> </button>"
+  search_box += "</form>"
+  search_box += "</div>"
   unless (current_path.include?("search"))
       return search_box
   end
