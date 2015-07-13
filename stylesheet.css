@@ -103,6 +103,14 @@
 	font-size: 55px;	
 }
 
+#main h2 {
+	background-color: #c0392b;
+	color: #fff;
+	padding: 6px 20px;
+	margin: 10px;
+	border-radius: 20px;
+}
+
 #main a {
 	text-decoration: none;
 	font-weight: 400;
@@ -112,6 +120,16 @@
 	text-decoration: underline;
 }
 
+#main ul li{
+	margin-left: 2em;
+	list-style: square;
+}
+
+#main .tutorial {
+	text-align: left;
+}
+
+
 #main #tutorials {
 	margin: 20px;
 	padding: 20px;
@@ -119,13 +137,9 @@
 	border-radius: 40px;
 }
 
-#main .tutorial {
-	text-align: left;
-}
-
-#main ul li{
-	padding-left: 3em;
-	margin: 1em 0em 2em 0em;
+#main #tutorials ul li{
+	margin: 1em 0em 2em 2em;
+	list-style: none;
 }
 
 /* non bulleted categories in tutorial list*/
@@ -153,7 +167,7 @@
 #main .tutorial.tut a{
 	background-color: #c0392b;
 	color: #fff;
-	padding: 4px 20px 6px 20px;
+	padding: 6px 20px;
 	border-radius: 20px;
 }
 
